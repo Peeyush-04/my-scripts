@@ -1,4 +1,5 @@
 param (
+    [Parameter(Position = 0, Mandatory = $true)] # To ignore -cmd flag to use
     [string]$cmd,
     [Parameter(ValueFromRemainingArguments = $true)]
     [string[]]$args
