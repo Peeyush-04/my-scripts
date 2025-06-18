@@ -17,12 +17,12 @@ Currently, this project in the development phase and slowly will cover most of t
 
 - ### What I have covered!
     1. Basic file operation commands: `cat`, `touch`
-    2. Compile commands: `run`
+    2. Compile commands: `run` (includes languages like `C/C++`, `Python`, `Go`, `Rust`, `Java`, ...)  
 
     **Why have I done this?**  
     The main reason is that I have some personal-experience of operating `Linux` and I liked it. But PowerShell being the default terminal for `Windows` does not have those features for developers.
     What they included is a long script which cannot be memorized for longer.
-    For example: `New-Item` `Get-Content` `Set-Content` (hard for newbie like me!!)
+    For example: `New-Item`, `Get-Content`, `Set-Content` (hard for newbie like me!!)
 
 - ### What I want to cover in future:
     There are some future implementations I have thought of, contributions are most welcome :) ):
