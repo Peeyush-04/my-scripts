@@ -3,7 +3,6 @@
 
 Follow the guide properly to understand my intention of continuing this project.
 
-
 ## Objective
 
 - To easy-out the over complicated commands by grouping based on `my/our` preferences.
@@ -22,11 +21,11 @@ Currently, this project in the development phase and slowly will cover most of t
 
     **Why have I done this?**  
     The main reason is that I have some personal-experience of operating `Linux` and I liked it. But PowerShell being the default terminal for `Windows` does not have those features for developers.
-    What they included is a long script which cannot be memorized for longer duration of time.
+    What they included is a long script which cannot be memorized for longer.
     For example: `New-Item` `Get-Content` `Set-Content` (hard for newbie like me!!)
 
 - ### What I want to cover in future:
-    There are some future implementations I have thought of, (contributions are most welcome):
+    There are some future implementations I have thought of, contributions are most welcome :) ):
     1. auto update script
     2. Log analyser (useful for analysts)
     3. Mathematical Engine (Can do offline task without needing online help)
@@ -49,6 +48,5 @@ So, what have you understood. The main mechanism for this to imply is that `user
 ---
 
 ```
-This project is open-source and anyone can participate
+This project is open-source and anyone can participate.
 ```
-
