@@ -38,22 +38,23 @@ The idea of implementation is easy and very-understanding. Consider having every
 
 > I have used the same **ideology**.  
 
-<div style="align: center; text-align: center;">
-<b>Visuals for better understanding</b><br>
-<img 
+<p align="center">
+  <b>Visuals for better understanding</b><br>
+  <img 
     src="./img/idea.jpg" 
-    alt="visual-representation" 
-    width="500" 
-    style="border-radius: 3rem; padding: 2rem;"
-/>
-<br>
-<img 
-    src="./img/my-scripts.svg" 
-    alt="Idea" 
+    alt="Visual Representation" 
     width="500"
-    style="border-radius: 3rem; padding-bottom: 2rem"
-/>
-</div>
+    style="border-radius: 3rem; padding: 1rem;" 
+  />
+</p>
+<p align="center">
+  <img 
+    src="./img/my-scripts.svg" 
+    alt="Script Flow" 
+    width="500"
+    style="border-radius: 3rem; padding-bottom: 1rem;"
+  />
+</p>
 
 So, what have you understood. The main mechanism for this to imply is that `user.ps1` script searches the custom scripts `<target>.ps1` from available directories and finds the target script, passes the parameters to target script and continues to execute. *Easy right??*
 
