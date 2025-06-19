@@ -13,7 +13,7 @@ Follow the guide properly to understand my intention of continuing this project.
 
 ## So what is this about?
 
-Currently, this project in the development phase and slowly will cover most of the important tasks which can be done easily within PowerShell (related to scripting only).
+Currently, this project is in the development phase and slowly will cover most of the important tasks which can be done easily within PowerShell (related to scripting only).
 
 - ### What I have covered!
     1. Basic file operation commands: `cat`, `touch`
