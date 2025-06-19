@@ -55,7 +55,8 @@ The idea of implementation is easy and very-understanding. Consider having every
   />
 </p>
 
-So, what have you understood. The main mechanism for this to imply is that `user.ps1` script searches the custom scripts `<target>.ps1` from available directories and finds the target script, passes the parameters to target script and continues to execute. *Easy right??*
+**So, what have you understood?**  
+The main mechanism for this to imply is that `user.ps1` script searches the custom scripts `<target>.ps1` from available directories and finds the target script, passes the parameters to target script and continues to execute. *Easy right??*
 
 ---
 
