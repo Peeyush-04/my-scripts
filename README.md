@@ -44,15 +44,14 @@ The idea of implementation is easy and very-understanding. Consider having every
     src="./img/idea.jpg" 
     alt="Visual Representation" 
     width="500"
-    style="border-radius: 3rem; padding: 1rem;" 
   />
-</p>
+</p> 
+<br>
 <p align="center">
   <img 
     src="./img/my-scripts.svg" 
     alt="Script Flow" 
     width="500"
-    style="border-radius: 3rem; padding-bottom: 1rem;"
   />
 </p>
 
