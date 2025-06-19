@@ -38,7 +38,7 @@ The idea of implementation is easy and very-understanding. Consider having every
 
 > I have used the same **ideology**.  
 
-<div style="text-align: center;">
+<div style="align: center; text-align: center;">
 <b>Visuals for better understanding</b><br>
 <img 
     src="./img/idea.jpg" 
