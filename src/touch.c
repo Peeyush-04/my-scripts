@@ -2,44 +2,29 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <windows.h>
 
-#define setColorGreen(handleName) SetConsoleTextAttribute(handleName, FOREGROUND_GREEN | FOREGROUND_INTENSITY)
-#define setColorWhite(handleName) SetConsoleTextAttribute(handleName, FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_RED | FOREGROUND_INTENSITY)
+// ANSI version (easy to understand)
+#define RED   "\x1b[31m"
+#define GREEN "\x1b[32m"
+#define WHITE "\x1b[0m"
 
 int main(int argc, char *argv[]) {
-  // color change logic
-  // get handle from STD_HANDLE_OUTPUT
-  HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-
   // creating files
-  printf("\n=> ");
-  // color => green
-  setColorGreen(hConsole);
-  printf("Executing...\n");
-  setColorWhite(hConsole);
-  
+  printf(WHITE "\n=> " GREEN "Executing...\n" WHITE);
   for(int i = 1; i < argc; i++) {
     int fd = open(argv[i], O_CREAT | O_WRONLY, 0644);
     
     // file descriptor error
     if(fd == -1) {
-      perror(argv[i]);
+      printf(RED "Error creating:" WHITE " %s\n", argv[i]);
       continue; // forward
     }
 
     close(fd);
-
-    printf("=> ");
-    // set color to green
-    setColorGreen(hConsole);
-    printf("Created:");
-    setColorWhite(hConsole);
-    printf(" %s\n", argv[i]);
+    printf(WHITE "=> " GREEN "Created:" WHITE " %s\n", argv[i]);
   }
   printf("\n");
 
-  // successful message
   printf("Program Executed successfully!\n");
   return 0; // no issues
 }
