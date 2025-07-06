@@ -5,7 +5,7 @@ BUILD_DIR=build
 SRC_DIR=src
 
 # list of source files
-PROGRAMS = touch
+PROGRAMS = touch mmkdir
 
 # building binaries from src
 BINARIES = $(addprefix $(BUILD_DIR)/, $(addsuffix .exe, $(PROGRAMS)))
