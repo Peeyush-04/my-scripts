@@ -7,4 +7,4 @@ param (
 $exePath = Resolve-Path "$PSScriptRoot\..\build\mmkdir.exe"
 
 # execute mkdir program
-& $exePath @Folders
+& $exePath @Folders 
