@@ -38,5 +38,5 @@ int main(int argc, char *argv[]) {
   printf("\n");
 
   printf(BOLD_WHITE "Program Executed successfully!\n" WHITE);
-  return 0;
+  return 0; 
 }
