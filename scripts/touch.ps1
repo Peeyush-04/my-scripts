@@ -1,10 +1,18 @@
-param(
-    [string]$file_name
+param (
+  [Parameter(ValueFromRemainingArguments = $true)]
+  [string[]]$Files
 )
 
-if(-not $file_name) {
-    Write-Host "Usage: touch <file-name>"
-    exit
+if (-not $Files -or $Files.Count -eq 0) {
+  Write-Host ""
+  Write-Host "Files are not passed."
+  Write-Host "Usage: touch <file1> <file2> ..."
+  Write-Host ""
+  exit
 }
 
-New-Item -ItemType File -Path $file_name -Force 
+# get touch.exe from build
+$exePath = Resolve-Path "$PSScriptRoot\..\build\touch.exe"
+
+# Run touch.exe from build
+& $exePath @Files
