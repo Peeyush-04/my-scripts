@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 
   if(argc < 2) {
     printf("\nFolders not passed.\n");
-    fprintf(stderr, RED "Usage: mkdir <folder1>...\n" WHITE);
+    fprintf(stderr, RED "Usage: mmkdir <folder1>...\n" WHITE);
     return 1;
   }
 
