@@ -26,7 +26,23 @@ switch ($extension) {
     }
     ".cpp" {
         Write-Host "Compiling C++..."
-        g++ $file -O3 -Wall -Wextra -std=c++23 -o "$filename.exe"
+        try {
+            $gccVerStr = g++ -dumpversion   
+            $majorVer = [int]($gccVerStr -split '\.')[0]
+        } catch {
+            $majorVer = 0 
+        }
+        if ($majorVer -ge 13) {
+            $stdFlag = "-std=c++23"
+        } elseif ($majorVer -ge 11) {
+            $stdFlag = "-std=c++20"
+        } elseif ($majorVer -ge 8) {
+            $stdFlag = "-std=c++17"
+        } else {
+            $stdFlag = "-std=c++14" # For very old compilers
+        }
+        Write-Host "Detected GCC v$majorVer. Using flag: $stdFlag"
+        g++ $file -O3 -Wall -Wextra $stdFlag -o "$filename.exe"
         if ($LASTEXITCODE -ne 0) { Write-Host "Compilation failed"; exit 1 }
         writer
         & ".\$filename.exe"
